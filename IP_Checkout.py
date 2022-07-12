@@ -1,3 +1,4 @@
+# Устанавливаем библиотеку telebot через консоль командой pip install pytelegrambotapi, используемая версия Python 3.10
 import os
 import telebot
 import time

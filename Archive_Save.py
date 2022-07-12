@@ -3,8 +3,9 @@ import zipfile
 
 
 def archiver(string, filename):
-    archived_file = string + '/' + filename
-    jungle_zip = zipfile.ZipFile(string, 'w')
+    l = string.split()
+    path = 'C:' + '/'.join(l)
+    jungle_zip = zipfile.ZipFile(path, 'w')
     jungle_zip.write(archived_file, compress_type=zipfile.ZIP_DEFLATED)
 
     jungle_zip.close()
